@@ -11,7 +11,7 @@ final class WelcomeViewController: UIViewController {
     
     @IBOutlet var welcomeLabel: UILabel!
     
-    var user = ""
+    private let person = PersonalData.getPesonalData()
     
     private let primaryColor = UIColor(
         red: 210/255,
@@ -26,6 +26,8 @@ final class WelcomeViewController: UIViewController {
         blue: 230/255,
         alpha: 1
     )
+    
+    var user = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()

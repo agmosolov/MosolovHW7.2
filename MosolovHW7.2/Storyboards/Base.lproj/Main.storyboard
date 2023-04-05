@@ -115,12 +115,21 @@
                                     <segue destination="Y5Y-WE-jy1" kind="unwind" unwindAction="unwindFor:" id="5zU-0z-msM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My name is Aleksandr." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vJw-od-hTn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My name is Ivan G." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vJw-od-hTn">
                                 <rect key="frame" x="16" y="137" width="361" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kqy-R1-FDW">
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="hPR-zl-j8r"/>
+                                    <tabBarItem systemItem="more" id="rCd-Id-Nvf"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tdE-ye-Kdh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -139,6 +148,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="view" destination="kqy-R1-FDW" id="CUL-9A-1fR"/>
                         <outlet property="welcomeLabel" destination="Aer-Kd-BSI" id="LhL-Va-RBM"/>
                     </connections>
                 </viewController>
@@ -146,6 +156,32 @@
                 <exit id="Y5Y-WE-jy1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="819" y="-35"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yjt-A2-APF">
+            <objects>
+                <viewController id="87J-c7-G4z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t6Z-YN-PpH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YnK-n5-6hW">
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="SKR-OR-wLl"/>
+                                    <tabBarItem systemItem="more" id="7wt-ie-fvW"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1CO-et-shX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5My-2m-bnX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1532" y="-35"/>
         </scene>
     </scenes>
     <resources>

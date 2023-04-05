@@ -12,8 +12,9 @@ final class LoginViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    private let user = "Aleksey"
-    private let password = "Pas1"
+    
+    private let user = PersonalData.getUser()
+    private let password = PersonalData.getPassword()
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -21,17 +22,15 @@ final class LoginViewController: UIViewController {
         welcomeVC.user = user
     }
     
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        userNameTF.text = "Aleksey"
-        passwordTF.text = "Pas1"
+        userNameTF.text = user
+        passwordTF.text = password
     }
     
     
