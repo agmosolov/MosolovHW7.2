@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		6DA8BFB029DDD4660089FD61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8BFAF29DDD4660089FD61 /* AppDelegate.swift */; };
 		6DA8BFB229DDD4660089FD61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8BFB129DDD4660089FD61 /* SceneDelegate.swift */; };
-		6DA8BFB429DDD4660089FD61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8BFB329DDD4660089FD61 /* ViewController.swift */; };
+		6DA8BFB429DDD4660089FD61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8BFB329DDD4660089FD61 /* LoginViewController.swift */; };
 		6DA8BFB729DDD4660089FD61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8BFB529DDD4660089FD61 /* Main.storyboard */; };
 		6DA8BFB929DDD4670089FD61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8BFB829DDD4670089FD61 /* Assets.xcassets */; };
 		6DA8BFBC29DDD4670089FD61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8BFBA29DDD4670089FD61 /* LaunchScreen.storyboard */; };
+		6DA8BFC729DDD4EE0089FD61 /* PersonalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8BFC629DDD4EE0089FD61 /* PersonalData.swift */; };
+		6DA8BFCA29DDD81F0089FD61 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8BFC929DDD81F0089FD61 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6DA8BFAC29DDD4660089FD61 /* MosolovHW7.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MosolovHW7.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA8BFAF29DDD4660089FD61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DA8BFB129DDD4660089FD61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6DA8BFB329DDD4660089FD61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DA8BFB329DDD4660089FD61 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6DA8BFB629DDD4660089FD61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DA8BFB829DDD4670089FD61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DA8BFBB29DDD4670089FD61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DA8BFBD29DDD4670089FD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DA8BFC629DDD4EE0089FD61 /* PersonalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalData.swift; sourceTree = "<group>"; };
+		6DA8BFC929DDD81F0089FD61 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		6DA8BFAE29DDD4660089FD61 /* MosolovHW7.2 */ = {
 			isa = PBXGroup;
 			children = (
-				6DA8BFAF29DDD4660089FD61 /* AppDelegate.swift */,
-				6DA8BFB129DDD4660089FD61 /* SceneDelegate.swift */,
-				6DA8BFB329DDD4660089FD61 /* ViewController.swift */,
-				6DA8BFB529DDD4660089FD61 /* Main.storyboard */,
+				6DA8BFC829DDD77E0089FD61 /* Models */,
+				6DA8BFC529DDD4C90089FD61 /* ViewControllers */,
+				6DA8BFC429DDD4A50089FD61 /* Storyboards */,
+				6DA8BFC329DDD4960089FD61 /* App */,
 				6DA8BFB829DDD4670089FD61 /* Assets.xcassets */,
-				6DA8BFBA29DDD4670089FD61 /* LaunchScreen.storyboard */,
-				6DA8BFBD29DDD4670089FD61 /* Info.plist */,
 			);
 			path = MosolovHW7.2;
+			sourceTree = "<group>";
+		};
+		6DA8BFC329DDD4960089FD61 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6DA8BFAF29DDD4660089FD61 /* AppDelegate.swift */,
+				6DA8BFB129DDD4660089FD61 /* SceneDelegate.swift */,
+				6DA8BFBD29DDD4670089FD61 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6DA8BFC429DDD4A50089FD61 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6DA8BFB529DDD4660089FD61 /* Main.storyboard */,
+				6DA8BFBA29DDD4670089FD61 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6DA8BFC529DDD4C90089FD61 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DA8BFB329DDD4660089FD61 /* LoginViewController.swift */,
+				6DA8BFC929DDD81F0089FD61 /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6DA8BFC829DDD77E0089FD61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DA8BFC629DDD4EE0089FD61 /* PersonalData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DA8BFB429DDD4660089FD61 /* ViewController.swift in Sources */,
+				6DA8BFB429DDD4660089FD61 /* LoginViewController.swift in Sources */,
+				6DA8BFCA29DDD81F0089FD61 /* WelcomeViewController.swift in Sources */,
 				6DA8BFB029DDD4660089FD61 /* AppDelegate.swift in Sources */,
 				6DA8BFB229DDD4660089FD61 /* SceneDelegate.swift in Sources */,
+				6DA8BFC729DDD4EE0089FD61 /* PersonalData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +329,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QP72M5J575;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MosolovHW7.2/Info.plist;
+				INFOPLIST_FILE = MosolovHW7.2/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +343,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.agmosolov.MosolovHW7-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +361,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QP72M5J575;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MosolovHW7.2/Info.plist;
+				INFOPLIST_FILE = MosolovHW7.2/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +375,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.agmosolov.MosolovHW7-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
